@@ -4,26 +4,29 @@ public class App
 {
     public void Run()
     {
+        
 
-  
-
-        var yellowHouse = new House();
-        yellowHouse.Address = "Testgatan 12";
-        yellowHouse.Color = "Yellow";
-
-        var stefansHouse = new House();
-        stefansHouse.Address = "Testgatan 13";
-        stefansHouse.Color = "Brown";
-
-        var annasHouse = new House();
-        annasHouse.Address = "Testgatan 14";
-        annasHouse.Color = "Green";
+        var yellowHouse = new House(1999,"Testgatan 123");
+        yellowHouse.Repaint("Yellow");
 
 
 
 
+        var stefansHouse = new House(1111,"Testgatan 99");
+        stefansHouse.Repaint("Green");
 
-        stefansHouse.Color = "red";
+
+        var annasHouse = new House(2222,"Testgatan 1234");
+
+
+        stefansHouse.Repaint("Blue");
+        
+        
+        Console.WriteLine($"renovering:  {stefansHouse.TotalRenovations()} kr");
+
+
+
+       
 
 
 
