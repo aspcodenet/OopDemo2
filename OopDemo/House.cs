@@ -36,5 +36,10 @@ namespace OopDemo
         {
             return spentOnRenovations;
         }
+
+        public string GetAddress()
+        {
+            return address;
+        }
     }
 }
