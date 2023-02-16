@@ -4,6 +4,34 @@ public class App
 {
     public void Run()
     {
+        var lunchMenyn = new List<Matratt>();
+
+        var mat = new Matratt();
+        mat.Calories = 20;
+        mat.Name = "Pannkakor";
+        mat.Price = 100;
+        mat.Type = "Vegetarisk";
+        lunchMenyn.Add(mat);
+
+        mat = new Matratt();
+        mat.Calories = 100;
+        mat.Name = "Kebabtallrik";
+        mat.Price = 150;
+        mat.Type = "Kött";
+        lunchMenyn.Add(mat);
+
+        Console.WriteLine("*** LUNCHMENYN ***");
+        foreach (var dish in lunchMenyn)
+        {
+            Console.WriteLine($"{dish.Name} {dish.Price} kr {dish.Type}");
+        }
+
+
+
+
+
+
+
 
         var houseList = new List<House>();
 
@@ -18,6 +46,7 @@ public class App
         var annasHouse = new House(2222,"Testgatan 1234");
         houseList.Add(annasHouse);
 
+      
 
         stefansHouse.Repaint("Blue");
 
